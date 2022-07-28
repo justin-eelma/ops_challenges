@@ -8,7 +8,10 @@
 #  Main
 
  print_user_history() {
+ 
+	echo "Here are your logins..."
 	echo "$(last)"
+	
  } 
 
 print_user_history
