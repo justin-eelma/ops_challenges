@@ -10,7 +10,11 @@
 
 mkdir dir1 dir2 dir3 dir4
 
+# create new array
+
 dirs=(dir1 dir2 dir3 dir4)
+
+# referencing each directory and creating new txt file in each dir
 
 touch ${dirs[0]}/txt1.txt
 touch ${dirs[1]}/txt2.txt
