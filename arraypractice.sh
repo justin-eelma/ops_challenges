@@ -6,15 +6,16 @@
 # Purpose: Create four directories with sample files in each directory
 
 # main
+
 # create dir{1...4}
 
 mkdir dir1 dir2 dir3 dir4
 
-# create new array
+# create array
 
 dirs=(dir1 dir2 dir3 dir4)
 
-# referencing each directory and creating new txt file in each dir
+# referencing each dir and creating new txt file in each dir
 
 touch ${dirs[0]}/txt1.txt
 touch ${dirs[1]}/txt2.txt
