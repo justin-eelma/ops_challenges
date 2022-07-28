@@ -19,7 +19,7 @@ touch ${dirs[3]}/txt4.txt
 
 # feedback message
 
-echo "Your new directories:"
+echo "Your new directories & files:"
 ls ${dirs[@]}
 
 # end
