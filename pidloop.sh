@@ -15,6 +15,6 @@ ps -a
 
 # kills process
 
-# if no one process needs to be killed, finish 
+# if no more processes needs to be killed, finish 
 
 # end
