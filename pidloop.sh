@@ -7,14 +7,18 @@
 
 # main
 
-# display list of all processes
+processes= ps -aux
+statement="kill"
 
-ps -a 
+echo $processes
+echo enter PID to $statement 
 
-# asks user to recognize process to kill
+read chosen_one
 
-# kills process
-
-# if no more processes needs to be killed, finish 
+for pid in $chosen_one
+    do 
+        sudo kill $pid
+        echo $pid ${statement}ed
+    done
 
 # end
