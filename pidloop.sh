@@ -7,14 +7,17 @@
 
 # main
 
+# experimenting  with variables
 processes= ps -aux
 statement="kill"
 
 echo $processes
 echo enter PID to $statement 
 
+# read user input
 read chosen_one
 
+# creating "pid" variable of user input
 for pid in $chosen_one
     do 
         sudo kill $pid
