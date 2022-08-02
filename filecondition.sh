@@ -19,7 +19,7 @@ read -a searchthis
 FILES=${searchthis[@]}
 
 # defining variable
-for mynameis in ${FILES[@]}
+for mynameis in $FILES
 do
 # found folder or file in user directory
     if [ -f $location/$mynameis ]
