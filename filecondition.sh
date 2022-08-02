@@ -13,13 +13,13 @@ location=/home/$USER
 
 echo "what is the file or directory you have in mind..."
 
-read searchthis
+read -a searchthis
 
 # creating array from input
-FILES=( $searchthis )
+FILES=${searchthis[@]}
 
 # defining variable
-for mynameis in $FILES
+for mynameis in ${FILES[@]}
 do
 # found folder or file in user directory
     if [ -f $location/$mynameis ]
@@ -29,18 +29,18 @@ do
 # did not find file or folder in user directory
     if [ ! -f $location/$mynameis ]
         then
-            echo $name "does not exist"
+            echo $FILES "does not exist"
 # asking user for creation type: folder or file            
             echo "would you like to create a folder? [ y / n ]"
             read folderdecision
                 if [ $folderdecision == y ]; then
-                    mkdir $location/$mynameis
+                mkdir $location/$mynameis
                 else
-                    echo "would you like to create a file? [ y / n ]"
-                    read filedecision 
-                    if [ $filedecision == y ]; then
-                    touch $location/$mynameis
-                    fi
+                echo "would you like to create a file? [ y / n ]"
+                read filedecision 
+                   if [ $filedecision == y ]; then
+                   touch $location/$mynameis
+                   fi
                 fi          
     fi
 
