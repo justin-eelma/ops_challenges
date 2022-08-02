@@ -9,26 +9,26 @@
 
 # main
 
-DIR=/home/$USER/
+location=/home/$USER
 
 echo "what is the file or directory you have in mind..."
 
 read searchthis
 
 # creating array from input
-file=( $searchthis )
+FILES=( $searchthis )
 
 # defining variable
-for name in $file
+for mynameis in $FILES
 do
-    if [ -f $DIR/$name ]
+    if [ -f $location/$mynameis ]
         then 
-            echo "$searchthis exists."
+            echo $searchthis "exists."
         else
-            touch $DIR/$name
-            echo "$name does not exist."
-            echo "$name created in" ls $DIR/$name
+            echo $name "does not exist."
+            touch $location/$mynameis
+            echo "created:" $location/$mynameis
     fi
 done
 
-# end
+#end
