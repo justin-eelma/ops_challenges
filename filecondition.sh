@@ -24,10 +24,10 @@ do
     if [ -f $DIR/$name ]
         then 
             echo "$searchthis exists."
-    else
-        touch $DIR/$name
-        echo "$name does not exist."
-        echo "$name created in" ls $DIR/$name
+        else
+            touch $DIR/$name
+            echo "$name does not exist."
+            echo "$name created in" ls $DIR/$name
     fi
 done
 
