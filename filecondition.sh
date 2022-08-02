@@ -38,9 +38,9 @@ do
                 else
                     echo "would you like to create a file? [ y / n ]"
                     read filedecision 
-                        if [ $filedecision == y ]; then
-                        touch $location/$mynameis
-                        fi
+                    if [ $filedecision == y ]; then
+                    touch $location/$mynameis
+                    fi
                 fi          
     fi
 
