@@ -31,12 +31,12 @@ do
         then
             echo $name "does not exist"
 # asking user for creation type: folder or file            
-            echo "would you like to create a folder? y/n"
+            echo "would you like to create a folder? [ y / n ]"
             read folderdecision
                 if [ $folderdecision == y ]; then
                     mkdir $location/$mynameis
                 else
-                    echo "would you like to create a file? y/n"
+                    echo "would you like to create a file? [ y / n ]"
                     read filedecision 
                         if [ $filedecision == y ]; then
                         touch $location/$mynameis
