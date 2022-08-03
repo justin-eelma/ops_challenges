@@ -18,3 +18,5 @@ echo "display adapter:"
 lshw -class display | grep product
 echo "network controller:"
 lshw -class network | grep product
+
+# end
