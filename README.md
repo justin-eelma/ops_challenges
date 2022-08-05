@@ -9,3 +9,4 @@ A collection of Ops Challenges from Ops 201
 - [Class 06 Ops Challenge - Conditions](filecondition.sh)
 - [Class 07 Ops Challenge - Grep](grepinfo.sh)
 - [Class 08 Ops Challenge - Batch Files](desktopbackup.bat)
+- [Class 09 Ops Challenge - Log Retrieval via Powershell](eventlog_practice.ps1)
