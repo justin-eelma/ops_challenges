@@ -19,4 +19,5 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 
 # Disable SMBv1, an insecure protocol
-Set-SmbServerConfiguration -EnableSMB1Protocol $false -Force
+Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
+
