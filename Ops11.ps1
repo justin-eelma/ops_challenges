@@ -10,7 +10,7 @@ Set-NetFirewallRule -DisplayGroup "File and Printer Sharing" -Enabled True
 netsh advfirewall firewall add rule name="Allow incoming ping requests IPv4" dir=in action=allow protocol=icmpv4
 
 # Enable Remote management
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
 
 # Remove bloatware
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
