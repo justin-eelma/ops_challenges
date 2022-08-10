@@ -1,4 +1,4 @@
-# Script: Ops 201 Class 11 Ops Challenge
+# Script: Ops 201 Class 12 Ops Challenge
 # Author: Justin Eelma
 # Date of last revision: 8/9/22
 # Purpose: Write a Powershell script that returns the IPv4 address of the computer.
