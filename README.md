@@ -12,3 +12,4 @@ A collection of Ops Challenges from Ops 201
 - [Class 09 Ops Challenge - Log Retrieval via Powershell](eventlog_practice.ps1)
 - [Class 10 Ops Challenge - PowerShell Processes](Ops10.ps1)
 - [Class 11 Ops Challenge - Automated Endpoint Configuration](Ops11.ps1)
+- [Class 12 Ops Challenge - IP Analysis](Ops12.ps1)
