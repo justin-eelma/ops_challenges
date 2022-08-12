@@ -28,7 +28,6 @@ The log retrieval script could get trimmed down. I feel like I should be using '
 
 I would like to explore conditions a little bit more. I could see the potential of making powerly efficient scripts through conditional formatting. 
 
-A collection of Ops Challenges from Ops 201 
 
 - [Class 02 Ops Challenge - Intro to Bash](/code/helloworld.sh)
 - [Class 03 Ops Challenge - Functions](/code/loginhistory.sh)
